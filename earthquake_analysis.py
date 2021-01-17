@@ -23,7 +23,7 @@ class TEC_analysis:
         self.longitude=None
         self.latitude=None
         self.new_df=pd.DataFrame(columns=["DATE","TEC"])
- #setters for latitude and longitude   
+ #setters for latitude and longitude
     def set_lat_lon(self,lat,lon):
         self.latitude=lat
         self.longitude=lon
@@ -37,7 +37,7 @@ class TEC_analysis:
     def no_dir_lat_lon(self):
         if ((self.dir_name or self.longitude or self.latitude)== None):
             return True
-       
+
     def convert_datetime(self):
         date_list=np.array(self.new_df["DATE"])
         Date=[]
@@ -59,7 +59,7 @@ class TEC_analysis:
         a_series = pd.Series([date,TEC], index = self.new_df.columns)
         self.new_df = self.new_df.append(a_series, ignore_index=True)
         return self.new_df
-    
+
     # iterates over all the txt file in the directory
     # implements get_specific_TEC
     # Appends the DF with only interested TEC
@@ -72,32 +72,11 @@ class TEC_analysis:
             self.new_df=self.get_specific_TEC(file)
         #converts the date of the df into a datetime format
         self.convert_datetime()
-        
 
 
-# In[111]:
 
-
-my_analysis=TEC_analysis()
-my_analysis.set_lat_lon(35,-117)
-my_analysis.print_lat_lon()
-
-
-# In[112]:
-
-
-my_analysis.set_dir_name("E:/TEC/2020TEC_ONLY/")
-my_analysis.dir_name
-
-
-# In[114]:
-
-
-my_analysis.iterate_dir()
-
-
-# In[115]:
-
-
-my_df=my_analysis.get_df()
-
+#my_analysis=TEC_analysis()
+#my_analysis.set_lat_lon(35,-117)
+#my_analysis.set_dir_name("E:/TEC/2020TEC_ONLY/")
+#my_analysis.iterate_dir()
+#my_df=my_analysis.get_df()

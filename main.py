@@ -16,4 +16,8 @@ if os.path.exists("TEC_data.csv"):
 else:
     my_analysis.iterate_dir()
 #save the TEC data into a csv files
-my_analysis.convert_csv()
+    my_analysis.convert_csv()
+
+df=pd.read_csv("TEC_data.csv")
+plt.plot(df["TEC"])
+plt.show()

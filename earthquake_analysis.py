@@ -37,6 +37,8 @@ class TEC_analysis:
     def no_dir_lat_lon(self):
         if ((self.dir_name or self.longitude or self.latitude)== None):
             return True
+    def convert_csv(self):
+        self.new_df.to_csv('TEC_data.csv')
 
     def convert_datetime(self):
         date_list=np.array(self.new_df["DATE"])

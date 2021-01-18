@@ -1,5 +1,6 @@
 import file_tec_extractor
 import earthquake_analysis as eq
+import TEC_visualization as tv
 import matplotlib.pyplot as plt
 import pandas as pd
 import os
@@ -19,5 +20,7 @@ else:
     my_analysis.convert_csv()
 
 df=pd.read_csv("TEC_data.csv")
-plt.plot(df["TEC"])
-plt.show()
+
+tec_plt=tv.tec_plot()
+tec_plt.set_df(df)
+tec_plt.basic_plot()

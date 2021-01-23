@@ -4,16 +4,16 @@
 
 ## Features:
 
-Extract the Horizontal TEC data from Noaa website
-The Extracted TEC data can be converted into List, Dataframe and Json
-User can select specific location TEC data and store in dataframe
-The stored TEC data can be used for further analysis
+1) Extract the Horizontal TEC data from Noaa website
+2) The Extracted TEC data can be converted into List, Dataframe and Json
+3) User can select specific location TEC data and store in dataframe
+4) The stored TEC data can be used for further analysis
 
 ## Other Features:
 
-Noaa website provides Folders containing TEC images,.txt files, etc
-This application helps to group *TEC.txt files and store into a specific directory for analysis
-Extract the Horizontal TEC data from Noaa website txt file
-Groups *TEC.txt file into a specific folder
-Selects specific location TEC data and stores in dataframe
-visualization
+1) Noaa website provides Folders containing TEC images,.txt files, etc
+2) This application helps to group *TEC.txt files and store into a specific directory for analysis
+3) Extracts the Horizontal TEC data from Noaa website txt file
+4) Groups *TEC.txt file into a specific folder
+5) Selects specific location TEC data and stores in dataframe
+6) visualization

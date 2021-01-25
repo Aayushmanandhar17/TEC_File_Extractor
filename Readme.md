@@ -1,4 +1,4 @@
-# Extracting TEC data from NOAA .txt file
+# Extracting TEC data from NOAA Website's .txt file
 
 ### This project is under construction
 

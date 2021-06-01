@@ -5,8 +5,8 @@
 ## Features:
 
 1) Extract the Horizontal TEC data from Noaa website
-2) The Extracted TEC data can be converted into List, Dataframe and Json
-3) User can select specific location TEC data and store in dataframe
+2) User can extract TEC data of a specific loacation or entire North America
+3) The Extracted TEC data can be converted into List, Dataframe and Json format
 4) The stored TEC data can be used for further analysis
 
 ## Other Features:
